@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03ECF650C567AC0DC6489AF4 /* Pods_verifapp_verifappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D3EEF1CA15832674AD1E89B /* Pods_verifapp_verifappTests.framework */; };
+		4F1DFA5C2768B3B800B7E405 /* Pods_verifapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34793AF78F0C9ED6769312F1 /* Pods_verifapp.framework */; };
+		4F1DFA5D2768B3B800B7E405 /* Pods_verifapp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34793AF78F0C9ED6769312F1 /* Pods_verifapp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4FAE388D276337AD00B06C10 /* verifapp.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE388C276337AD00B06C10 /* verifapp.docc */; };
+		4FAE3893276337AD00B06C10 /* verifapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAE3888276337AD00B06C10 /* verifapp.framework */; };
+		4FAE3898276337AD00B06C10 /* verifappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3897276337AD00B06C10 /* verifappTests.swift */; };
+		4FAE3899276337AD00B06C10 /* verifapp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FAE388B276337AD00B06C10 /* verifapp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FAE3991276337F600B06C10 /* TokenManagerCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3969276337F500B06C10 /* TokenManagerCallback.swift */; };
+		4FAE3992276337F600B06C10 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE396A276337F500B06C10 /* TokenManager.swift */; };
+		4FAE3993276337F600B06C10 /* OTPTimeoutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE396C276337F500B06C10 /* OTPTimeoutPresenter.swift */; };
+		4FAE3994276337F600B06C10 /* OTPTimeoutCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE396D276337F500B06C10 /* OTPTimeoutCallback.swift */; };
+		4FAE3995276337F600B06C10 /* OTPTimeoutThreadImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE396E276337F500B06C10 /* OTPTimeoutThreadImplementation.swift */; };
+		4FAE3996276337F600B06C10 /* SMSFromImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3971276337F500B06C10 /* SMSFromImpl.swift */; };
+		4FAE3997276337F600B06C10 /* CallFromImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3973276337F500B06C10 /* CallFromImpl.swift */; };
+		4FAE3998276337F600B06C10 /* WhatsappImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3975276337F500B06C10 /* WhatsappImpl.swift */; };
+		4FAE3999276337F600B06C10 /* OTPManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3977276337F500B06C10 /* OTPManagerImpl.swift */; };
+		4FAE399A276337F600B06C10 /* OTPManagerCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3978276337F500B06C10 /* OTPManagerCallBack.swift */; };
+		4FAE399B276337F600B06C10 /* OTPConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3979276337F500B06C10 /* OTPConfiguration.swift */; };
+		4FAE399C276337F600B06C10 /* OTPApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE397A276337F500B06C10 /* OTPApiManager.swift */; };
+		4FAE399D276337F600B06C10 /* BaseOTPImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE397B276337F500B06C10 /* BaseOTPImpl.swift */; };
+		4FAE399E276337F600B06C10 /* OTPFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE397C276337F500B06C10 /* OTPFactory.swift */; };
+		4FAE399F276337F600B06C10 /* OTPListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE397D276337F500B06C10 /* OTPListener.swift */; };
+		4FAE39A0276337F600B06C10 /* OTPCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE397E276337F500B06C10 /* OTPCodes.swift */; };
+		4FAE39A1276337F600B06C10 /* PreferencesUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3981276337F600B06C10 /* PreferencesUtils.swift */; };
+		4FAE39A2276337F600B06C10 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3982276337F600B06C10 /* Defaults.swift */; };
+		4FAE39A3276337F600B06C10 /* SharedPreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3983276337F600B06C10 /* SharedPreferenceManager.swift */; };
+		4FAE39A4276337F600B06C10 /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3985276337F600B06C10 /* NetworkUtils.swift */; };
+		4FAE39A5276337F600B06C10 /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3986276337F600B06C10 /* HTTPRequest.swift */; };
+		4FAE39A6276337F600B06C10 /* OnNetworkResponseCallBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3987276337F600B06C10 /* OnNetworkResponseCallBack.swift */; };
+		4FAE39A7276337F600B06C10 /* HTTPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3988276337F600B06C10 /* HTTPResponse.swift */; };
+		4FAE39A8276337F600B06C10 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE398A276337F600B06C10 /* Constants.swift */; };
+		4FAE39A9276337F600B06C10 /* DeviceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE398B276337F600B06C10 /* DeviceModels.swift */; };
+		4FAE39AA276337F600B06C10 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE398C276337F600B06C10 /* KeychainManager.swift */; };
+		4FAE39AB276337F600B06C10 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE398D276337F600B06C10 /* Utils.swift */; };
+		4FAE39AC276337F600B06C10 /* AuthUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE398E276337F600B06C10 /* AuthUtils.swift */; };
+		4FAE39AD276337F600B06C10 /* OTPLevels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE398F276337F600B06C10 /* OTPLevels.swift */; };
+		4FAE39AE276337F600B06C10 /* OTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAE3990276337F600B06C10 /* OTPManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FAE3894276337AD00B06C10 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FAE387F276337AD00B06C10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FAE3887276337AD00B06C10;
+			remoteInfo = verifapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F1DFA5E2768B3B800B7E405 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4F1DFA5D2768B3B800B7E405 /* Pods_verifapp.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		34793AF78F0C9ED6769312F1 /* Pods_verifapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_verifapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D3EEF1CA15832674AD1E89B /* Pods_verifapp_verifappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_verifapp_verifappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAE3888276337AD00B06C10 /* verifapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = verifapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAE388B276337AD00B06C10 /* verifapp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = verifapp.h; sourceTree = "<group>"; };
+		4FAE388C276337AD00B06C10 /* verifapp.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = verifapp.docc; sourceTree = "<group>"; };
+		4FAE3892276337AD00B06C10 /* verifappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = verifappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FAE3897276337AD00B06C10 /* verifappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifappTests.swift; sourceTree = "<group>"; };
+		4FAE3969276337F500B06C10 /* TokenManagerCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManagerCallback.swift; sourceTree = "<group>"; };
+		4FAE396A276337F500B06C10 /* TokenManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		4FAE396C276337F500B06C10 /* OTPTimeoutPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTimeoutPresenter.swift; sourceTree = "<group>"; };
+		4FAE396D276337F500B06C10 /* OTPTimeoutCallback.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTimeoutCallback.swift; sourceTree = "<group>"; };
+		4FAE396E276337F500B06C10 /* OTPTimeoutThreadImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPTimeoutThreadImplementation.swift; sourceTree = "<group>"; };
+		4FAE3971276337F500B06C10 /* SMSFromImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SMSFromImpl.swift; sourceTree = "<group>"; };
+		4FAE3973276337F500B06C10 /* CallFromImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallFromImpl.swift; sourceTree = "<group>"; };
+		4FAE3975276337F500B06C10 /* WhatsappImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhatsappImpl.swift; sourceTree = "<group>"; };
+		4FAE3977276337F500B06C10 /* OTPManagerImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPManagerImpl.swift; sourceTree = "<group>"; };
+		4FAE3978276337F500B06C10 /* OTPManagerCallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPManagerCallBack.swift; sourceTree = "<group>"; };
+		4FAE3979276337F500B06C10 /* OTPConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPConfiguration.swift; sourceTree = "<group>"; };
+		4FAE397A276337F500B06C10 /* OTPApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPApiManager.swift; sourceTree = "<group>"; };
+		4FAE397B276337F500B06C10 /* BaseOTPImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseOTPImpl.swift; sourceTree = "<group>"; };
+		4FAE397C276337F500B06C10 /* OTPFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPFactory.swift; sourceTree = "<group>"; };
+		4FAE397D276337F500B06C10 /* OTPListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPListener.swift; sourceTree = "<group>"; };
+		4FAE397E276337F500B06C10 /* OTPCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPCodes.swift; sourceTree = "<group>"; };
+		4FAE3981276337F600B06C10 /* PreferencesUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesUtils.swift; sourceTree = "<group>"; };
+		4FAE3982276337F600B06C10 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		4FAE3983276337F600B06C10 /* SharedPreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedPreferenceManager.swift; sourceTree = "<group>"; };
+		4FAE3985276337F600B06C10 /* NetworkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		4FAE3986276337F600B06C10 /* HTTPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPRequest.swift; sourceTree = "<group>"; };
+		4FAE3987276337F600B06C10 /* OnNetworkResponseCallBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnNetworkResponseCallBack.swift; sourceTree = "<group>"; };
+		4FAE3988276337F600B06C10 /* HTTPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPResponse.swift; sourceTree = "<group>"; };
+		4FAE398A276337F600B06C10 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		4FAE398B276337F600B06C10 /* DeviceModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceModels.swift; sourceTree = "<group>"; };
+		4FAE398C276337F600B06C10 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		4FAE398D276337F600B06C10 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4FAE398E276337F600B06C10 /* AuthUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthUtils.swift; sourceTree = "<group>"; };
+		4FAE398F276337F600B06C10 /* OTPLevels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPLevels.swift; sourceTree = "<group>"; };
+		4FAE3990276337F600B06C10 /* OTPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPManager.swift; sourceTree = "<group>"; };
+		73DA462AC7D3EBD468020761 /* Pods-verifapp-verifappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-verifapp-verifappTests.debug.xcconfig"; path = "Target Support Files/Pods-verifapp-verifappTests/Pods-verifapp-verifappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C6DBE1E1630712A6DCDE372 /* Pods-verifapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-verifapp.release.xcconfig"; path = "Target Support Files/Pods-verifapp/Pods-verifapp.release.xcconfig"; sourceTree = "<group>"; };
+		8433090D8D3686CB48AD2A51 /* Pods-verifapp-verifappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-verifapp-verifappTests.release.xcconfig"; path = "Target Support Files/Pods-verifapp-verifappTests/Pods-verifapp-verifappTests.release.xcconfig"; sourceTree = "<group>"; };
+		FEC2F0121F1DA3ACD27FA4DB /* Pods-verifapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-verifapp.debug.xcconfig"; path = "Target Support Files/Pods-verifapp/Pods-verifapp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FAE3885276337AD00B06C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1DFA5C2768B3B800B7E405 /* Pods_verifapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAE388F276337AD00B06C10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAE3893276337AD00B06C10 /* verifapp.framework in Frameworks */,
+				03ECF650C567AC0DC6489AF4 /* Pods_verifapp_verifappTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FAE387E276337AD00B06C10 = {
+			isa = PBXGroup;
+			children = (
+				4FAE388A276337AD00B06C10 /* verifapp */,
+				4FAE3896276337AD00B06C10 /* verifappTests */,
+				4FAE3889276337AD00B06C10 /* Products */,
+				99B091066B0EC269D140BFE3 /* Pods */,
+				AFCF48E37FB092FD0DB17EF9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4FAE3889276337AD00B06C10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3888276337AD00B06C10 /* verifapp.framework */,
+				4FAE3892276337AD00B06C10 /* verifappTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FAE388A276337AD00B06C10 /* verifapp */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE397F276337F600B06C10 /* Common */,
+				4FAE3967276337F500B06C10 /* Managers */,
+				4FAE397E276337F500B06C10 /* OTPCodes.swift */,
+				4FAE398F276337F600B06C10 /* OTPLevels.swift */,
+				4FAE397D276337F500B06C10 /* OTPListener.swift */,
+				4FAE3990276337F600B06C10 /* OTPManager.swift */,
+				4FAE388B276337AD00B06C10 /* verifapp.h */,
+				4FAE388C276337AD00B06C10 /* verifapp.docc */,
+			);
+			path = verifapp;
+			sourceTree = "<group>";
+		};
+		4FAE3896276337AD00B06C10 /* verifappTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3897276337AD00B06C10 /* verifappTests.swift */,
+			);
+			path = verifappTests;
+			sourceTree = "<group>";
+		};
+		4FAE3967276337F500B06C10 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3968276337F500B06C10 /* Token */,
+				4FAE396B276337F500B06C10 /* Timeout */,
+				4FAE396F276337F500B06C10 /* levels */,
+				4FAE3976276337F500B06C10 /* Base */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		4FAE3968276337F500B06C10 /* Token */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3969276337F500B06C10 /* TokenManagerCallback.swift */,
+				4FAE396A276337F500B06C10 /* TokenManager.swift */,
+			);
+			path = Token;
+			sourceTree = "<group>";
+		};
+		4FAE396B276337F500B06C10 /* Timeout */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE396C276337F500B06C10 /* OTPTimeoutPresenter.swift */,
+				4FAE396D276337F500B06C10 /* OTPTimeoutCallback.swift */,
+				4FAE396E276337F500B06C10 /* OTPTimeoutThreadImplementation.swift */,
+			);
+			path = Timeout;
+			sourceTree = "<group>";
+		};
+		4FAE396F276337F500B06C10 /* levels */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3970276337F500B06C10 /* SMS */,
+				4FAE3972276337F500B06C10 /* Call */,
+				4FAE3974276337F500B06C10 /* Whatsapp */,
+			);
+			path = levels;
+			sourceTree = "<group>";
+		};
+		4FAE3970276337F500B06C10 /* SMS */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3971276337F500B06C10 /* SMSFromImpl.swift */,
+			);
+			path = SMS;
+			sourceTree = "<group>";
+		};
+		4FAE3972276337F500B06C10 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3973276337F500B06C10 /* CallFromImpl.swift */,
+			);
+			path = Call;
+			sourceTree = "<group>";
+		};
+		4FAE3974276337F500B06C10 /* Whatsapp */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3975276337F500B06C10 /* WhatsappImpl.swift */,
+			);
+			path = Whatsapp;
+			sourceTree = "<group>";
+		};
+		4FAE3976276337F500B06C10 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3977276337F500B06C10 /* OTPManagerImpl.swift */,
+				4FAE3978276337F500B06C10 /* OTPManagerCallBack.swift */,
+				4FAE3979276337F500B06C10 /* OTPConfiguration.swift */,
+				4FAE397A276337F500B06C10 /* OTPApiManager.swift */,
+				4FAE397B276337F500B06C10 /* BaseOTPImpl.swift */,
+				4FAE397C276337F500B06C10 /* OTPFactory.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4FAE397F276337F600B06C10 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3980276337F600B06C10 /* Preferences */,
+				4FAE3984276337F600B06C10 /* Network */,
+				4FAE3989276337F600B06C10 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4FAE3980276337F600B06C10 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3981276337F600B06C10 /* PreferencesUtils.swift */,
+				4FAE3982276337F600B06C10 /* Defaults.swift */,
+				4FAE3983276337F600B06C10 /* SharedPreferenceManager.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		4FAE3984276337F600B06C10 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE3985276337F600B06C10 /* NetworkUtils.swift */,
+				4FAE3986276337F600B06C10 /* HTTPRequest.swift */,
+				4FAE3987276337F600B06C10 /* OnNetworkResponseCallBack.swift */,
+				4FAE3988276337F600B06C10 /* HTTPResponse.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4FAE3989276337F600B06C10 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4FAE398A276337F600B06C10 /* Constants.swift */,
+				4FAE398B276337F600B06C10 /* DeviceModels.swift */,
+				4FAE398C276337F600B06C10 /* KeychainManager.swift */,
+				4FAE398D276337F600B06C10 /* Utils.swift */,
+				4FAE398E276337F600B06C10 /* AuthUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		99B091066B0EC269D140BFE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEC2F0121F1DA3ACD27FA4DB /* Pods-verifapp.debug.xcconfig */,
+				7C6DBE1E1630712A6DCDE372 /* Pods-verifapp.release.xcconfig */,
+				73DA462AC7D3EBD468020761 /* Pods-verifapp-verifappTests.debug.xcconfig */,
+				8433090D8D3686CB48AD2A51 /* Pods-verifapp-verifappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AFCF48E37FB092FD0DB17EF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34793AF78F0C9ED6769312F1 /* Pods_verifapp.framework */,
+				3D3EEF1CA15832674AD1E89B /* Pods_verifapp_verifappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4FAE3883276337AD00B06C10 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAE3899276337AD00B06C10 /* verifapp.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4FAE3887276337AD00B06C10 /* verifapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FAE389C276337AD00B06C10 /* Build configuration list for PBXNativeTarget "verifapp" */;
+			buildPhases = (
+				1258FBC1E138935C2C0A5A9B /* [CP] Check Pods Manifest.lock */,
+				4FAE3883276337AD00B06C10 /* Headers */,
+				4FAE3884276337AD00B06C10 /* Sources */,
+				4FAE3885276337AD00B06C10 /* Frameworks */,
+				4FAE3886276337AD00B06C10 /* Resources */,
+				4F1DFA5E2768B3B800B7E405 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = verifapp;
+			productName = verifapp;
+			productReference = 4FAE3888276337AD00B06C10 /* verifapp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4FAE3891276337AD00B06C10 /* verifappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FAE389F276337AD00B06C10 /* Build configuration list for PBXNativeTarget "verifappTests" */;
+			buildPhases = (
+				60B21EAAB717041A58317FAD /* [CP] Check Pods Manifest.lock */,
+				4FAE388E276337AD00B06C10 /* Sources */,
+				4FAE388F276337AD00B06C10 /* Frameworks */,
+				4FAE3890276337AD00B06C10 /* Resources */,
+				3D7FE2C685651B3C3DFB6C01 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FAE3895276337AD00B06C10 /* PBXTargetDependency */,
+			);
+			name = verifappTests;
+			productName = verifappTests;
+			productReference = 4FAE3892276337AD00B06C10 /* verifappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FAE387F276337AD00B06C10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					4FAE3887276337AD00B06C10 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					4FAE3891276337AD00B06C10 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 4FAE3882276337AD00B06C10 /* Build configuration list for PBXProject "verifapp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FAE387E276337AD00B06C10;
+			productRefGroup = 4FAE3889276337AD00B06C10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FAE3887276337AD00B06C10 /* verifapp */,
+				4FAE3891276337AD00B06C10 /* verifappTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FAE3886276337AD00B06C10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAE3890276337AD00B06C10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1258FBC1E138935C2C0A5A9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-verifapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D7FE2C685651B3C3DFB6C01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-verifapp-verifappTests/Pods-verifapp-verifappTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-verifapp-verifappTests/Pods-verifapp-verifappTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-verifapp-verifappTests/Pods-verifapp-verifappTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60B21EAAB717041A58317FAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-verifapp-verifappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FAE3884276337AD00B06C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAE39A8276337F600B06C10 /* Constants.swift in Sources */,
+				4FAE399D276337F600B06C10 /* BaseOTPImpl.swift in Sources */,
+				4FAE39A5276337F600B06C10 /* HTTPRequest.swift in Sources */,
+				4FAE39AB276337F600B06C10 /* Utils.swift in Sources */,
+				4FAE399B276337F600B06C10 /* OTPConfiguration.swift in Sources */,
+				4FAE3994276337F600B06C10 /* OTPTimeoutCallback.swift in Sources */,
+				4FAE3991276337F600B06C10 /* TokenManagerCallback.swift in Sources */,
+				4FAE3992276337F600B06C10 /* TokenManager.swift in Sources */,
+				4FAE399F276337F600B06C10 /* OTPListener.swift in Sources */,
+				4FAE3993276337F600B06C10 /* OTPTimeoutPresenter.swift in Sources */,
+				4FAE39A9276337F600B06C10 /* DeviceModels.swift in Sources */,
+				4FAE39A6276337F600B06C10 /* OnNetworkResponseCallBack.swift in Sources */,
+				4FAE39AD276337F600B06C10 /* OTPLevels.swift in Sources */,
+				4FAE39AE276337F600B06C10 /* OTPManager.swift in Sources */,
+				4FAE399A276337F600B06C10 /* OTPManagerCallBack.swift in Sources */,
+				4FAE3998276337F600B06C10 /* WhatsappImpl.swift in Sources */,
+				4FAE39AA276337F600B06C10 /* KeychainManager.swift in Sources */,
+				4FAE39A3276337F600B06C10 /* SharedPreferenceManager.swift in Sources */,
+				4FAE39A7276337F600B06C10 /* HTTPResponse.swift in Sources */,
+				4FAE3996276337F600B06C10 /* SMSFromImpl.swift in Sources */,
+				4FAE39A2276337F600B06C10 /* Defaults.swift in Sources */,
+				4FAE39AC276337F600B06C10 /* AuthUtils.swift in Sources */,
+				4FAE388D276337AD00B06C10 /* verifapp.docc in Sources */,
+				4FAE399E276337F600B06C10 /* OTPFactory.swift in Sources */,
+				4FAE39A1276337F600B06C10 /* PreferencesUtils.swift in Sources */,
+				4FAE399C276337F600B06C10 /* OTPApiManager.swift in Sources */,
+				4FAE3999276337F600B06C10 /* OTPManagerImpl.swift in Sources */,
+				4FAE3995276337F600B06C10 /* OTPTimeoutThreadImplementation.swift in Sources */,
+				4FAE39A0276337F600B06C10 /* OTPCodes.swift in Sources */,
+				4FAE39A4276337F600B06C10 /* NetworkUtils.swift in Sources */,
+				4FAE3997276337F600B06C10 /* CallFromImpl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FAE388E276337AD00B06C10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAE3898276337AD00B06C10 /* verifappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FAE3895276337AD00B06C10 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FAE3887276337AD00B06C10 /* verifapp */;
+			targetProxy = 4FAE3894276337AD00B06C10 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4FAE389A276337AD00B06C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FAE389B276337AD00B06C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FAE389D276337AD00B06C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEC2F0121F1DA3ACD27FA4DB /* Pods-verifapp.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercurialminds.verifapp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FAE389E276337AD00B06C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C6DBE1E1630712A6DCDE372 /* Pods-verifapp.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercurialminds.verifapp;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4FAE38A0276337AD00B06C10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73DA462AC7D3EBD468020761 /* Pods-verifapp-verifappTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6NDC687ZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercurialminds.verifappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4FAE38A1276337AD00B06C10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8433090D8D3686CB48AD2A51 /* Pods-verifapp-verifappTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F6NDC687ZQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mercurialminds.verifappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FAE3882276337AD00B06C10 /* Build configuration list for PBXProject "verifapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAE389A276337AD00B06C10 /* Debug */,
+				4FAE389B276337AD00B06C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FAE389C276337AD00B06C10 /* Build configuration list for PBXNativeTarget "verifapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAE389D276337AD00B06C10 /* Debug */,
+				4FAE389E276337AD00B06C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FAE389F276337AD00B06C10 /* Build configuration list for PBXNativeTarget "verifappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FAE38A0276337AD00B06C10 /* Debug */,
+				4FAE38A1276337AD00B06C10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FAE387F276337AD00B06C10 /* Project object */;
+}

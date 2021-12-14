@@ -1,0 +1,11 @@
+framework module verifapp {
+  umbrella header "verifapp.h"
+
+  export *
+  module * { export * }
+}
+
+module verifapp.Swift {
+    header "verifapp-Swift.h"
+    requires objc
+}
