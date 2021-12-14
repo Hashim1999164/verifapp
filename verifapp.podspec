@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'verifappsdk'
+  s.name             = 'verifapp'
   s.version          = '1.0.0'
   s.summary          = 'SDK to Verify Your Phone Numbers'
   s.description      = 'Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing'
