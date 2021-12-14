@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
   s.version          = '1.0.0'
   s.summary          = 'SDK to Verify Your Phone Numbers'
   s.description      = 'Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing Currently Testing'
-  s.homepage         = 'https://verifapp.com/'
+  s.homepage         = 'https://github.com/Hashim1999164/verifapp'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = 'MIT'
   s.author           = { 'Hashim Khan' => 'sardarhashim30@gmail.com' }
-  s.source           = { :git => 'https://github.com/Hashim1999164/verifapp.git', :tag => s.version.to_s }
+  s.source           = { :http => 'https://drive.google.com/uc?export=download&id=1BkpCA2DJKeHu7PZcwFA884Z8L-U3hl6q', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
   s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'Alamofire', '~> 5.4.4'
