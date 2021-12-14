@@ -7,12 +7,13 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = 'MIT'
   s.author           = { 'Hashim Khan' => 'sardarhashim30@gmail.com' }
-  s.source           = { :http => 'https://drive.google.com/uc?export=download&id=1BkpCA2DJKeHu7PZcwFA884Z8L-U3hl6q', :tag => s.version.to_s }
+  s.source           = { :http => 'https://www.dropbox.com/s/aqy1nk81i1m1f1f/VerifAppSDK.zip?dl=1'}
   s.ios.deployment_target = '12.0'
   s.frameworks = 'UIKit', 'Foundation'
   s.dependency 'Alamofire', '~> 5.4.4'
   s.dependency 'SwiftyJSON', '~> 5.0.1'
   s.dependency 'PhoneNumberKit', '~> 3.3.3'
   s.dependency 'SwiftKeychainWrapper', '~> 4.0.1'
+  s.exclude_files = "Classes/Exclude"
   s.swift_versions = '5.0'
 end
